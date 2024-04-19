@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply h-10 rounded-lg  pl-5 pr-5 text-justify   hover:shadow-lg   hover:shadow-slate-400/50 focus:outline-none focus:ring;
+}
+
+.btn-dark {
+  @apply bg-purple-500  hover:bg-purple-600 focus:ring-purple-300 active:bg-purple-700;
+}
+
+.btn-light {
+  @apply bg-cyan-500 shadow-lg shadow-cyan-500/50;
+}
+
+.logo-shadow:hover {
+  text-shadow: 0 16px 16px rgba(169, 84, 244, 0.5);
+  filter: drop-shadow(4px 8px 16px rgba(156, 59, 231, 0.5));
+}
+.slanted-container {
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow:
+      0 0 5px rgba(63, 219, 240, 0.5),
+      0 0 10px rgba(63, 219, 240, 0.5),
+      0 5px 20px rgba(63, 219, 240, 0.5); /* Adjust the last value for vertical position */
+  }
+  50% {
+    text-shadow: 0 0 5px rgba(63, 219, 240, 0.5);
+
+    filter: drop-shadow(0 0 10px rgba(9, 240, 236, 0.5));
+  }
+  100% {
+    text-shadow: 0 5px 15px rgba(63, 219, 240, 0.5); /* Adjust the last value for vertical position */
+  }
+}
+
+.glowing-text {
+  animation: glowing 2.5s infinite;
+}
+
+/*Section B */
+
+.card {
+  @apply bg-card relative  w-1/3 rounded-2xl text-left;
+}
+
+.cardBody {
+  @apply space-y-1 p-8;
+}
+.crdBtn {
+  @apply absolute bottom-1;
+}
+
+/*Section C */
+
+.reviewer {
+  @apply absolute bottom-0;
+}

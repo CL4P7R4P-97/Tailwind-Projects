@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 const SecondaryNav = () => {
   return (
-    <nav class="secondary-nav">
+    <nav class="secondary-nav drop-shadow-lg ">
       <div class="ml-8 mt-1 cursor-pointer justify-start rounded-lg p-1  shadow-sm ">
         <button class="home-button  ">
           <FontAwesomeIcon style={{ height: "24px" }} icon={faHouse} />
         </button>
       </div>
-      <ul class="flex justify-center space-x-4 p-3 pl-24 ">
+      <ul class="xxsm:hidden justify-center space-x-4 p-3 pl-24 sm:flex ">
         <li class="secondary-li  ">
           <a>HTML</a>
         </li>
@@ -35,9 +35,9 @@ const SecondaryNav = () => {
           <a>CSS</a>
         </li>
       </ul>
-      <div class="relative pr-8">
+      <div class="xxsm:hidden relative pr-8 md:mb-2 md:flex">
         <label
-          for="searchBox"
+          htmlFor="searchBox"
           class=" absolute z-50 ml-2 mt-3 rounded-lg border-purple-600"
         >
           <FontAwesomeIcon

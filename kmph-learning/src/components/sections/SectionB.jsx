@@ -6,7 +6,7 @@ const SectionB = () => {
       <h1 className=" text-3xl font-bold text-purple-600">
         Recommended Courses
       </h1>
-      <div class=" flex  space-x-8 p-10">
+      <div class=" xxsm:flex-col xxsm:space-y-3    p-10 md:flex   md:flex-row md:space-x-8">
         <div className="  card  ">
           <div className="h-1/3 overflow-hidden">
             <img

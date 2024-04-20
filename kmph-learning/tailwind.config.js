@@ -8,6 +8,9 @@ export default {
     screens: {
       sm: "640px",
       tablet: "976px",
+      xxsm: "144px",
+      mid: "525px",
+      banw: "935px",
       ...defaultTheme.screens,
     },
     extend: {

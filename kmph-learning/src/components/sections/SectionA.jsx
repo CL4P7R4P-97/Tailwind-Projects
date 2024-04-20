@@ -3,8 +3,8 @@ import Typewriter from "typewriter-effect";
 
 const SectionA = () => {
   return (
-    <section class="welcome-section overflow-hidden">
-      <div class=" flex-col justify-start space-y-3 p-20">
+    <section class="welcome-section xxsm:text-center banw:text-left  overflow-hidden ">
+      <div class="space-y-3 p-20">
         <h1 className="text-3xl">
           Welcome to{" "}
           <span className="glowing-text text-cyan-500  shadow-cyan-500">
@@ -35,12 +35,14 @@ const SectionA = () => {
           Harry is my attempt to teach basics and those coding techniques to
           people in short time which took me ages to learn.
         </p>
-        <div className=" space-x-2">
-          <button class="btn btn-light">Free Courses</button>
-          <button className="btn btn-light">Explore Blogs</button>
+        <div className=" space-x-3 space-y-2">
+          <button class="btn btn-light">Free Courses</button>{" "}
+          <button style={{ marginLeft: 0 }} className="btn btn-light">
+            Explore Blogs
+          </button>
         </div>
       </div>
-      <div className=" slanted-container pr-8 ">
+      <div className=" slanted-container xxsm:hidden banw:flex pr-8  ">
         <img className=" h-full" src="../../src/assets/images/banner.jpg" />
       </div>
     </section>

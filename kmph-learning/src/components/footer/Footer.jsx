@@ -6,8 +6,8 @@ import insta from "../../assets/images/svgs/insta.svg";
 import twitter from "../../assets/images/svgs/twitter.svg";
 const Footer = () => {
   return (
-    <footer className="dark:bg-secondary-bg flex justify-between bg-white p-2 text-white">
-      <div className="flex space-x-2 p-5 text-black dark:text-white">
+    <footer className="dark:bg-secondary-bg xxsm:flex-col   justify-between bg-white p-2 text-white md:flex md:flex-row">
+      <div className="xxsm:justify-around flex space-x-2 p-5 text-black dark:text-white">
         <img className="w-8  " src={code} alt="code" />
         <h1 className="text-xl">KMPHLearning &nbsp;</h1>
         <div className="pt-1">{" | "}</div>
@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mt-1 flex p-2">
+      <div className="mt-1 flex justify-around p-2">
         <ul className="flex">
           <li className="cursor-pointer">
             <a>

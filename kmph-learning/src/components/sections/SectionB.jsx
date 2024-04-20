@@ -2,7 +2,7 @@ import React from "react";
 
 const SectionB = () => {
   return (
-    <section class="bg-body-dark flex-column h-full w-full justify-around pt-8 text-center text-white">
+    <section class="section-courses">
       <h1 className=" text-3xl font-bold text-purple-600">
         Recommended Courses
       </h1>
@@ -15,11 +15,9 @@ const SectionB = () => {
             />
           </div>
           <div className="cardBody">
-            <h4 className="text-subHeading">FREE COURSE</h4>
-            <h1 className="py-1 text-xl">
-              Python Tutorials - 100 Days of Code
-            </h1>
-            <p className=" text-slate-400">
+            <h4 className="offer">FREE COURSE</h4>
+            <h1 className="course-name">Python Tutorials - 100 Days of Code</h1>
+            <p className="course-desc">
               Python is one of the most demanded programming languages in the
               job market. Surprisingly, it is equally easy to learn and master
               Python. Let's commit our 100 days of code to python!
@@ -37,9 +35,9 @@ const SectionB = () => {
             />
           </div>
           <div className="cardBody">
-            <h4 className="text-subHeading">FREE COURSE</h4>
-            <h1 className="py-1 text-xl">Ultimate JavaScript Course</h1>
-            <p className="text-slate-400">
+            <h4 className="offer">FREE COURSE</h4>
+            <h1 className="course-name">Ultimate JavaScript Course</h1>
+            <p className="course-desc">
               This latest JavaScript course comes with premium curriculum that
               covers everything from basics to advance. On top of that, you will
               get my handwritten notes of JS for completely free. What are you
@@ -58,9 +56,9 @@ const SectionB = () => {
             />
           </div>
           <div className="cardBody">
-            <h4 className="text-subHeading">FREE COURSE</h4>
-            <h1 className="py-1 text-xl">React JS Tutorials For Beginners</h1>
-            <p className="text-slate-400">
+            <h4 className="offer">FREE COURSE</h4>
+            <h1 className="course-name">React JS Tutorials For Beginners</h1>
+            <p className="course-desc">
               React is a free and open-source front-end JavaScript library. This
               series will cover React from starting to the end. We will learn
               react from the ground up!

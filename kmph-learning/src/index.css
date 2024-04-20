@@ -3,6 +3,46 @@
 @tailwind components;
 @tailwind utilities;
 
+/*Header*/
+.main-header {
+  @apply dark:bg-secondary-bg tablet:flex tablet:justify-between   bg-white pb-2 pt-2   text-base text-purple-600     dark:text-white;
+}
+
+.main-ul {
+  @apply flex items-center  space-x-3 p-4 pr-2;
+}
+
+.main-li {
+  @apply cursor-pointer border-b-2 border-transparent align-middle  transition-all  duration-300 hover:border-b-2 hover:border-purple-600;
+}
+.main-button {
+  @apply h-10 rounded-lg bg-purple-500 pl-5 pr-5 text-justify text-white hover:bg-purple-600  hover:shadow-lg   hover:shadow-slate-400/50 focus:outline-none focus:ring focus:ring-purple-300 active:bg-purple-700;
+}
+
+/*Secondary nav */
+
+.secondary-nav {
+  @apply dark:bg-secondary-bg  flex  justify-between bg-white  text-sm font-normal text-white;
+}
+
+.home-button {
+  @apply rounded-md bg-gray-500 p-1 shadow-md shadow-gray-500 hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 active:bg-violet-700 dark:bg-gray-500 dark:text-gray-400 dark:hover:bg-gray-700  dark:focus:bg-gray-700 dark:focus:ring-gray-400;
+}
+
+.secondary-li {
+  @apply cursor-pointer border-b-2 border-transparent font-semibold  text-purple-600 hover:border-b-2 hover:border-purple-600 dark:text-purple-400;
+}
+
+.search-box {
+  @apply mt-2 rounded-lg border-2 border-purple-400 p-1 pl-10 text-sm text-purple-500 outline-1 hover:shadow-lg  focus:bg-slate-50 focus:shadow-slate-400/50 focus:ring focus:ring-violet-300 dark:border-transparent;
+}
+
+/*welcome section */
+
+.welcome-section {
+  @apply dark:bg-body-dark flex h-full w-full justify-between pt-20 dark:text-white;
+}
+
 .btn {
   @apply h-10 rounded-lg  pl-5 pr-5 text-justify   hover:shadow-lg   hover:shadow-slate-400/50 focus:outline-none focus:ring;
 }
@@ -13,6 +53,12 @@
 
 .btn-light {
   @apply bg-cyan-500 shadow-lg shadow-cyan-500/50;
+}
+
+/*section-courses*/
+
+.section-courses {
+  @apply dark:bg-body-dark h-full  w-full flex-col justify-around bg-white pt-8 text-center text-white;
 }
 
 .logo-shadow:hover {
@@ -47,7 +93,17 @@
 /*Section B */
 
 .card {
-  @apply bg-card relative  w-1/3 rounded-2xl text-left;
+  @apply dark:bg-card relative w-1/3 rounded-2xl bg-white  text-left shadow-lg shadow-gray-500;
+}
+.course-name {
+  @apply py-1 text-xl font-medium text-black dark:text-white;
+}
+.course-desc {
+  @apply text-black dark:text-slate-400;
+}
+
+.offer {
+  @apply dark:text-subHeading text-black;
 }
 
 .cardBody {
@@ -58,6 +114,10 @@
 }
 
 /*Section C */
+
+.testimonials {
+  @apply dark:bg-body-dark relative isolate overflow-hidden bg-purple-300 px-6 py-8 sm:py-4 lg:px-8;
+}
 
 .reviewer {
   @apply absolute bottom-0;

@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 const SectionA = () => {
   return (
-    <section class="bg-body-dark flex h-full w-full justify-between text-white">
+    <section class="welcome-section overflow-hidden">
       <div class=" flex-col justify-start space-y-3 p-20">
         <h1 className="text-3xl">
           Welcome to{" "}
@@ -27,25 +27,6 @@ const SectionA = () => {
               autoStart: true,
               loop: true,
             }}
-            // onInit={(typewriter) => {
-            //   typewriter
-            //     .typeString("Java")
-            //     .pauseFor(1500)
-            //     .deleteAll()
-            //     .typeString("C++")
-            //     .pauseFor(1500)
-            //     .deleteAll()
-            //     .typeString("Python")
-            //     .pauseFor(1500)
-            //     .deleteAll()
-            //     .typeString("React")
-            //     .pauseFor(1500)
-            //     .deleteAll()
-            //     .typeString("Web Development")
-            //     .pauseFor(1500)
-            //     .deleteAll()
-            //     .start();
-            // }}
           />
         </h2>
         <p>

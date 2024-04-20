@@ -3,35 +3,35 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 const SecondaryNav = () => {
   return (
-    <nav class="bg-secondary-bg  flex justify-between  text-sm font-normal text-white">
+    <nav class="secondary-nav">
       <div class="ml-8 mt-1 cursor-pointer justify-start rounded-lg p-1  shadow-sm ">
-        <span class=" shadow-sm hover:text-purple-500 ">
+        <button class="home-button  ">
           <FontAwesomeIcon style={{ height: "24px" }} icon={faHouse} />
-        </span>
+        </button>
       </div>
       <ul class="flex justify-center space-x-4 p-3 pl-24 ">
-        <li class="cursor-pointer border-b-2  border-transparent text-purple-300 hover:border-b-2 hover:border-purple-600  ">
+        <li class="secondary-li  ">
           <a>HTML</a>
         </li>
-        <li class="cursor-pointer border-b-2 border-transparent text-purple-300 hover:border-b-2 hover:border-purple-600 ">
+        <li class="secondary-li ">
           <a>Java</a>
         </li>
-        <li class="cursor-pointer border-b-2 border-transparent text-purple-300 hover:border-b-2 hover:border-purple-600 ">
+        <li class="secondary-li ">
           <a>Python</a>
         </li>
-        <li class="cursor-pointer border-b-2 border-transparent text-purple-300 hover:border-b-2 hover:border-purple-600 ">
+        <li class="secondary-li ">
           <a>React</a>
         </li>
-        <li class="cursor-pointer border-b-2 border-transparent text-purple-300 hover:border-b-2 hover:border-purple-600 ">
+        <li class="secondary-li ">
           <a>JS</a>
         </li>
-        <li class="cursor-pointer border-b-2 border-transparent text-purple-300 hover:border-b-2 hover:border-purple-600 ">
+        <li class="secondary-li ">
           <a>C</a>
         </li>
-        <li class="cursor-pointer border-b-2 border-transparent text-purple-300 hover:border-b-2 hover:border-purple-600 ">
+        <li class="secondary-li ">
           <a>C++</a>
         </li>
-        <li class="cursor-pointer border-b-2 border-transparent text-purple-300 hover:border-b-2 hover:border-purple-600 ">
+        <li class="secondary-li ">
           <a>CSS</a>
         </li>
       </ul>
@@ -46,10 +46,7 @@ const SecondaryNav = () => {
           />{" "}
         </label>
 
-        <input
-          id="searchBox"
-          class="w-30 mt-2 rounded-lg p-1 pl-10  text-sm text-purple-300 hover:shadow-lg focus:bg-slate-50 focus:shadow-slate-400/50"
-        />
+        <input id="searchBox" class="search-box" />
       </div>
     </nav>
   );

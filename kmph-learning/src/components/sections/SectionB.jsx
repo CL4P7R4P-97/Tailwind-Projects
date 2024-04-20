@@ -27,7 +27,7 @@ const SectionB = () => {
             </div>
           </div>
         </div>
-        <div className="card">
+        <div style={{ marginTop: 0 }} className="card">
           <div className="h-1/3 overflow-hidden">
             <img
               className="  rounded-t-lg"
@@ -48,7 +48,7 @@ const SectionB = () => {
             </div>
           </div>
         </div>
-        <div className="card">
+        <div style={{ marginTop: 0 }} className="card">
           <div className="h-1/3 overflow-hidden">
             <img
               className=" w-full rounded-t-lg"

@@ -22,7 +22,10 @@ const SectionC = () => {
             <h6 className="text-subHeading">Analyst</h6>
           </div>
         </div>
-        <div className="card p-8 pb-16 dark:text-white">
+        <div
+          style={{ marginTop: 0 }}
+          className="card p-8 pb-16 dark:text-white"
+        >
           {" "}
           <p className="dark:text-testimonial text-black">
             <img className="h-8 pb-2" src={logo} alt="image" />

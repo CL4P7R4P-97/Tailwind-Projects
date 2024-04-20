@@ -9,7 +9,7 @@ import SectionC from "./components/sections/SectionC";
 function App() {
   return (
     <div className="flex-column">
-      <header class="fixed z-20 w-full divide-y divide-gray-400">
+      <header class="fixed z-20 w-full  divide-y-2 divide-purple-500/95  dark:divide-white">
         <Header />
         <SecondaryNav />
       </header>

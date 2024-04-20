@@ -7,10 +7,12 @@ const SectionB = () => {
         Recommended Courses
       </h1>
       <div class=" xxsm:flex-col xxsm:space-y-3    p-10 md:flex   md:flex-row md:space-x-8">
-        <div className="  card  ">
-          <div className="h-1/3 overflow-hidden">
+        <div className="  card mt-3  ">
+          <div className="relative h-1/3 overflow-hidden">
             <img
-              className="  rounded-t-lg"
+              width="100%"
+              height="100%"
+              className="  rounded-t-lg object-cover"
               src="../../src/assets/images/courses/python.jpg"
             />
           </div>
@@ -27,7 +29,7 @@ const SectionB = () => {
             </div>
           </div>
         </div>
-        <div style={{ marginTop: 0 }} className="card">
+        <div className="card">
           <div className="h-1/3 overflow-hidden">
             <img
               className="  rounded-t-lg"
@@ -48,7 +50,7 @@ const SectionB = () => {
             </div>
           </div>
         </div>
-        <div style={{ marginTop: 0 }} className="card">
+        <div className="card">
           <div className="h-1/3 overflow-hidden">
             <img
               className=" w-full rounded-t-lg"

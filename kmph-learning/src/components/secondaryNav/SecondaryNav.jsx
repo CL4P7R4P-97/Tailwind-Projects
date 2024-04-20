@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 const SecondaryNav = () => {
   return (
-    <nav class="secondary-nav shadow-md drop-shadow-lg dark:shadow-gray-600 ">
-      <div class="ml-8 mt-1 cursor-pointer justify-start rounded-lg p-1 shadow-sm  shadow-gray-600 ">
+    <nav class="secondary-nav  drop-shadow-lg ">
+      <div class="my-1 ml-8 cursor-pointer justify-start rounded-lg p-1 shadow-sm  shadow-gray-600 ">
         <button class="home-button  ">
-          <FontAwesomeIcon style={{ height: "24px" }} icon={faHouse} />
+          <FontAwesomeIcon style={{ height: "22px" }} icon={faHouse} />
         </button>
       </div>
       <ul class="xxsm:hidden justify-center space-x-4 p-3 pl-24 sm:flex ">

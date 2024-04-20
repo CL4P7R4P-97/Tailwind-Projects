@@ -26,7 +26,7 @@
 }
 
 .home-button {
-  @apply rounded-md bg-gray-500 p-1 shadow-md shadow-gray-500 hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 active:bg-violet-700 dark:bg-gray-500 dark:text-gray-400 dark:hover:bg-gray-700  dark:focus:bg-gray-700 dark:focus:ring-gray-400;
+  @apply rounded-md bg-gray-500 p-1 shadow-sm shadow-gray-500 hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 active:bg-violet-700 dark:bg-gray-500 dark:text-gray-400 dark:hover:bg-gray-700  dark:focus:bg-gray-700 dark:focus:ring-gray-400;
 }
 
 .secondary-li {

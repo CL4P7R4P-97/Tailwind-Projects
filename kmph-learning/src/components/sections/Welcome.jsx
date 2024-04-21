@@ -1,10 +1,10 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-const SectionA = () => {
+const Welcome = () => {
   return (
-    <section class="welcome-section xxsm:text-center banw:text-left  overflow-hidden ">
-      <div class="space-y-3 p-20">
+    <section class="welcome-section overflow-hidden xxsm:text-center  banw:text-left ">
+      <div class="space-y-3 p-14">
         <h1 className="text-3xl">
           Welcome to{" "}
           <span className="glowing-text text-cyan-500  shadow-cyan-500">
@@ -42,11 +42,11 @@ const SectionA = () => {
           </button>
         </div>
       </div>
-      <div className=" slanted-container xxsm:hidden banw:flex pr-8  ">
+      <div className=" slanted-container pr-8 xxsm:hidden banw:flex  ">
         <img className=" h-full" src="../../src/assets/images/banner.jpg" />
       </div>
     </section>
   );
 };
 
-export default SectionA;
+export default Welcome;

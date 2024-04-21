@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/svgs/comma.svg";
-const SectionC = () => {
+const Testimonials = () => {
   return (
     <section class="testimonials h-full">
       <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
@@ -40,4 +40,4 @@ const SectionC = () => {
   );
 };
 
-export default SectionC;
+export default Testimonials;

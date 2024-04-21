@@ -1,58 +1,14 @@
-import {
-  BookOpenIcon,
-  DocumentTextIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-  VideoCameraIcon,
-} from "@heroicons/react/20/solid";
-import { HomeIcon } from "@heroicons/react/24/outline";
 import { DarkThemeToggle } from "flowbite-react";
 import React from "react";
+import { Link } from "react-router-dom";
 import code from "../../assets/images/svgs/code.svg";
 import SideMenu from "../sideMenu/SideMenu";
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
-];
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-const products = [
-  {
-    name: "Home",
-    href: "#",
-    icon: HomeIcon,
-  },
-  {
-    name: "Courses",
 
-    href: "#",
-    icon: BookOpenIcon,
-  },
-  {
-    name: "Tutorial",
-
-    href: "#",
-    icon: VideoCameraIcon,
-  },
-  {
-    name: "Blog",
-
-    href: "#",
-    icon: DocumentTextIcon,
-  },
-  {
-    name: "Notes",
-
-    href: "#",
-    icon: BookOpenIcon,
-  },
-];
-const Header = () => {
+const MainNav = () => {
   return (
     <nav class="main-header">
       <div class=" cursor-pointer flex-row justify-start p-3  text-xl">
-        <a href="/">
+        <a to="/">
           <img className="w-8   " src={code} alt="code" />
 
           <span className="text-black dark:text-white">
@@ -62,26 +18,26 @@ const Header = () => {
         </a>
       </div>
       <ul class=" main-ul  ">
-        <li class=" main-li  ">
-          <a>Home</a>
+        <li class=" main-li   ">
+          <Link to="/">Home</Link>
         </li>
         <li class="main-li">
-          <a class>Courses</a>
+          <Link to="/courses">Courses</Link>
         </li>
         <li class="main-li">
-          <a>Tutorial</a>
+          <Link to="/tutorials">Tutorial</Link>
         </li>
         <li class="main-li">
-          <a>Blog</a>
+          <Link to="/blog">Blog</Link>
         </li>
         <li class="main-li">
-          <a>Notes</a>
+          <Link to="/notes">Notes</Link>
         </li>
         <li class="main-li">
-          <a>Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
         <li class="main-li">
-          <a>My Gear</a>
+          <Link>My Gear</Link>
         </li>
         <li class="main-li">
           <a>Work With Us</a>
@@ -100,4 +56,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default MainNav;

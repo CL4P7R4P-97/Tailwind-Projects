@@ -5,11 +5,11 @@
 
 /*Header*/
 .main-header {
-  @apply dark:bg-secondary-bg tablet:flex tablet:justify-between   bg-white pb-2 pt-2 text-base   text-purple-600 md:flex     dark:text-white;
+  @apply bg-white pb-2 pt-2   text-base text-purple-600 dark:bg-secondary-bg dark:text-white   md:flex tablet:flex     tablet:justify-between;
 }
 
 .main-ul {
-  @apply xxsm:hidden items-center space-x-3  p-4 pr-2 sm:flex;
+  @apply items-center space-x-3 p-4  pr-2 xxsm:hidden sm:flex;
 }
 
 .main-li {
@@ -22,7 +22,7 @@
 /*Secondary nav */
 
 .secondary-nav {
-  @apply dark:bg-secondary-bg  flex  justify-between bg-white  text-sm font-normal text-white;
+  @apply flex  justify-between  bg-white text-sm  font-normal text-white dark:bg-secondary-bg;
 }
 
 .home-button {
@@ -40,7 +40,7 @@
 /*welcome section */
 
 .welcome-section {
-  @apply dark:bg-body-dark flex h-full w-full justify-between pt-40 dark:text-white;
+  @apply flex h-full w-full justify-between  dark:bg-body-dark  dark:text-white;
 }
 
 .btn {
@@ -58,7 +58,7 @@
 /*section-courses*/
 
 .section-courses {
-  @apply dark:bg-body-dark h-full  w-full flex-col justify-around bg-white pt-8 text-center text-white;
+  @apply h-full w-full  flex-col justify-around bg-white pt-8 text-center text-white dark:bg-body-dark;
 }
 
 .logo-shadow:hover {
@@ -93,7 +93,7 @@
 /*Section B */
 
 .card {
-  @apply dark:bg-card  relative rounded-2xl bg-white text-left shadow-lg  shadow-gray-500 md:w-1/3;
+  @apply relative  rounded-2xl bg-white text-left shadow-lg shadow-gray-500  dark:bg-card md:w-1/3;
 }
 .course-name {
   @apply py-1 text-xl font-medium text-black dark:text-white;
@@ -103,7 +103,7 @@
 }
 
 .offer {
-  @apply dark:text-subHeading text-black;
+  @apply text-black dark:text-subHeading;
 }
 
 .cardBody {
@@ -116,7 +116,7 @@
 /*Section C */
 
 .testimonials {
-  @apply dark:bg-body-dark relative isolate overflow-hidden bg-purple-300 px-6 py-8 sm:py-4 lg:px-8;
+  @apply relative isolate overflow-hidden bg-purple-300 px-6 py-8 dark:bg-body-dark sm:py-4 lg:px-8;
 }
 
 .reviewer {

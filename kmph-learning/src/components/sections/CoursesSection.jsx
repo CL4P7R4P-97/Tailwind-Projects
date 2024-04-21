@@ -1,6 +1,6 @@
 import React from "react";
 
-const SectionB = () => {
+const CoursesSection = () => {
   return (
     <section class="section-courses">
       <h1 className=" text-3xl font-bold text-purple-600">
@@ -75,4 +75,4 @@ const SectionB = () => {
   );
 };
 
-export default SectionB;
+export default CoursesSection;

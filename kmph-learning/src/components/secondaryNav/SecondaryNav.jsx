@@ -4,7 +4,7 @@ import React from "react";
 const SecondaryNav = () => {
   return (
     <nav class="secondary-nav  drop-shadow-lg ">
-      <div class="my-1 ml-8 cursor-pointer justify-start rounded-lg p-1 shadow-sm  shadow-gray-600 ">
+      <div class="my-1 ml-8 cursor-pointer justify-start rounded-lg p-1 shadow-sm  shadow-purple-600 ">
         <button class="home-button  ">
           <FontAwesomeIcon style={{ height: "22px" }} icon={faHouse} />
         </button>

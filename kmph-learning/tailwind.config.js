@@ -17,7 +17,10 @@ export default {
       colors: {
         "secondary-bg": "#1F2937",
         "body-dark": "#111827",
+        blog: "#334155",
         card: "#1E293B",
+        heading: "#C084FC",
+        darkHeading: "#7E22CE",
         subHeading: "rgb(156 163 175)",
         testimonial: "#D1D5D2",
       },

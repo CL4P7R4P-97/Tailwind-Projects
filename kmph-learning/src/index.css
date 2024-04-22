@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-white dark:bg-body-dark;
+}
+
+.section-heading {
+  @apply dark:text-heading text-darkHeading text-3xl font-bold;
+}
+
 /*Header*/
 .main-header {
   @apply bg-white pb-2 pt-2   text-base text-purple-600 dark:bg-secondary-bg dark:text-white   md:flex tablet:flex     tablet:justify-between;
@@ -58,7 +66,7 @@
 /*section-courses*/
 
 .section-courses {
-  @apply h-full w-full  flex-col justify-around bg-white pt-8 text-center text-white dark:bg-body-dark;
+  @apply h-full w-full flex-col  bg-white pt-8 text-center text-white dark:bg-body-dark tablet:justify-evenly;
 }
 
 .logo-shadow:hover {

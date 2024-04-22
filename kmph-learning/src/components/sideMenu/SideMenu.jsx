@@ -25,31 +25,31 @@ function classNames(...classes) {
 const products = [
   {
     name: "Home",
-    href: "#",
+    href: "/",
     icon: HomeIcon,
   },
   {
     name: "Courses",
 
-    href: "#",
+    href: "/courses",
     icon: BookOpenIcon,
   },
   {
     name: "Tutorial",
 
-    href: "#",
+    href: "/tutorials",
     icon: VideoCameraIcon,
   },
   {
     name: "Blog",
 
-    href: "#",
+    href: "/blogs",
     icon: DocumentTextIcon,
   },
   {
     name: "Notes",
 
-    href: "#",
+    href: "/notes",
     icon: BookOpenIcon,
   },
 ];
@@ -62,7 +62,7 @@ const SideMenu = () => {
   };
   return (
     <div
-      className="tablet:hidden absolute right-0 top-6 mr-2 cursor-pointer rounded-lg hover:shadow-md hover:shadow-purple-400 "
+      className="absolute right-0 top-6 mr-2 cursor-pointer rounded-lg hover:shadow-md hover:shadow-purple-400 tablet:hidden "
       onClick={handleMenu}
     >
       <svg
@@ -86,7 +86,7 @@ const SideMenu = () => {
         onClose={() => handleMenu}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="dark:bg-secondary-bg fixed inset-y-0 right-0 z-40 w-2/4 overflow-y-auto  bg-gray-200 px-6 py-6 sm:ring-1  sm:ring-gray-900/10 ">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-40 w-2/4 overflow-y-auto bg-gray-200  px-6 py-6 dark:bg-secondary-bg sm:ring-1  sm:ring-gray-900/10 ">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">KMPHLearning</span>
@@ -112,7 +112,7 @@ const SideMenu = () => {
                     <>
                       <Disclosure.Button
                         className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-black hover:bg-purple-500/85 hover:text-white 
-                        sm:hidden dark:text-white dark:hover:text-white  "
+                        dark:text-white dark:hover:text-white sm:hidden  "
                       >
                         Menu
                         <ChevronDownIcon
@@ -143,7 +143,7 @@ const SideMenu = () => {
                     <>
                       <Disclosure.Button
                         className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-black hover:bg-purple-500/85 hover:text-white 
-                        sm:hidden dark:text-white dark:hover:text-white  "
+                        dark:text-white dark:hover:text-white sm:hidden  "
                       >
                         Courses
                         <ChevronDownIcon

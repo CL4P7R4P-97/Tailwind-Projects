@@ -5,11 +5,11 @@ import Welcome from "../sections/Welcome";
 
 const Home = () => {
   return (
-    <>
+    <div>
       <Welcome />
       <CoursesSection />
       <Testimonials />
-    </>
+    </div>
   );
 };
 

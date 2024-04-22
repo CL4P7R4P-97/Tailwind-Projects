@@ -1,7 +1,53 @@
 import React from "react";
+import { courses, premiumCourses } from "../../data/courses";
+import CourseCard from "../cards/CourseCard";
 
 const Courses = () => {
-  return <div className="text-black">Courses</div>;
+  return (
+    <div className="   mb-5 flex-col p-4 text-black">
+      <div>
+        <h1
+          className="section-heading my-4 
+        pt-4 text-center text-2xl"
+        >
+          Premium Courses
+        </h1>
+        <div className=" justify-evenly gap-10 space-y-4 xxsm:flex-col md:flex md:flex-row md:flex-wrap md:space-x-4   ">
+          {premiumCourses.map((course) => {
+            return (
+              <CourseCard
+                width={true}
+                courseTitle={course.courseTitle}
+                courseDescription={course.courseDescription}
+                imgUrl={course.imgUrl}
+              />
+            );
+          })}
+        </div>
+      </div>
+
+      <div>
+        <h1
+          className="section-heading  mt-10
+          py-4 text-center text-2xl"
+        >
+          More Courses
+        </h1>
+        <div className="justify-evenly gap-10 xxsm:flex-col md:flex md:flex-row md:flex-wrap md:space-x-4 tablet:flex-wrap ">
+          {courses.map((course) => {
+            return (
+              <CourseCard
+                courseTitle={course.courseTitle}
+                width={true}
+                courseDescription={course.courseDescription}
+                imgUrl={course.imgUrl}
+              />
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Courses;

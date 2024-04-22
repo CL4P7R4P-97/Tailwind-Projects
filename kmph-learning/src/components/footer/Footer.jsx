@@ -6,12 +6,12 @@ import insta from "../../assets/images/svgs/insta.svg";
 import twitter from "../../assets/images/svgs/twitter.svg";
 const Footer = () => {
   return (
-    <footer className="dark:bg-secondary-bg xxsm:flex-col   justify-between bg-white p-2 text-white md:flex md:flex-row">
-      <div className="xxsm:justify-around flex space-x-2 p-5 text-black dark:text-white">
+    <footer className="justify-between bg-white   p-2 text-white dark:bg-secondary-bg xxsm:flex-col md:flex md:flex-row">
+      <div className="flex space-x-2 p-5 text-black dark:text-white xxsm:justify-around">
         <img className="w-8  " src={code} alt="code" />
-        <h1 className="text-xl">KMPHLearning &nbsp;</h1>
+        <h1 className=" text-xl">KMPHLearning &nbsp;</h1>
         <div className="pt-1">{" | "}</div>
-        <div className="text-subHeading pt-1 text-sm">
+        <div className="pt-1 text-sm text-subHeading">
           &nbsp;Copyright &copy; 2024 KMPHLearning.com
         </div>
       </div>

@@ -14,11 +14,11 @@ function App() {
     <>
       <Router>
         <div class="flex min-h-screen flex-col">
-          <header class=" z-20 w-full divide-y-2 divide-purple-500/95 drop-shadow-sm  ">
+          <header class="fixed z-20 w-full divide-y-2 divide-purple-500/95 drop-shadow-sm  ">
             <MainNav />
             <SecondaryNav />
           </header>
-          <main className="grow">
+          <main className="mt-40 grow">
             <Routes>
               <Route path="/" element={<Home />}></Route>
               <Route path="/courses" element={<Courses />}></Route>

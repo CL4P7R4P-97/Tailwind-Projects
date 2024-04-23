@@ -23,7 +23,7 @@ const callsToAction = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-const products = [
+const mainTabs = [
   {
     name: "Home",
     href: "/",
@@ -55,6 +55,44 @@ const products = [
   },
 ];
 
+const secondaryTabs = [
+  {
+    title: "HTML",
+    href: "tutorial/html",
+  },
+  {
+    title: "CSS",
+    href: "tutorial/css",
+  },
+  {
+    title: "JAVASCRIPT",
+    href: "tutorial/javascript",
+  },
+  {
+    title: "C",
+    href: "tutorial/c",
+  },
+  {
+    title: "C++",
+    href: "tutorial/c++",
+  },
+  {
+    title: "JAVA",
+    href: "tutorial/java",
+  },
+  {
+    title: "PYTHON",
+    href: "tutorial/python",
+  },
+  {
+    title: "PHP",
+    href: "tutorial/php",
+  },
+  {
+    title: "REACT JS",
+    href: "tutorial/reactjs",
+  },
+];
 const SideMenu = () => {
   const [menuVisible, setMenuVisibility] = useState(false);
 
@@ -125,12 +163,12 @@ const SideMenu = () => {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
+                        {[...mainTabs, ...callsToAction].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as={Link}
                             to={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-purple-700 hover:bg-white dark:text-white dark:hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-purple-700 hover:bg-white dark:text-white dark:hover:bg-gray-50 dark:hover:text-black "
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -144,7 +182,7 @@ const SideMenu = () => {
                     <>
                       <Disclosure.Button
                         className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-black hover:bg-purple-500/85 hover:text-white 
-                        dark:text-white dark:hover:text-white sm:hidden  "
+                        dark:text-white  dark:hover:text-white sm:hidden  "
                       >
                         Courses
                         <ChevronDownIcon
@@ -156,14 +194,15 @@ const SideMenu = () => {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
+                        {console.log(...secondaryTabs)}
+                        {[...secondaryTabs, ...callsToAction].map((item) => (
                           <Disclosure.Button
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-purple-700 hover:bg-white dark:text-white dark:hover:bg-gray-50"
+                            key={item.title}
+                            as={Link}
+                            to={item.href}
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-purple-700 hover:bg-white dark:text-white dark:hover:bg-gray-50 dark:hover:text-black "
                           >
-                            {item.name}
+                            {item.title}
                           </Disclosure.Button>
                         ))}
                       </Disclosure.Panel>

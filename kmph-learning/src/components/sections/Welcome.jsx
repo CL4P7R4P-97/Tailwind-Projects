@@ -3,8 +3,8 @@ import Typewriter from "typewriter-effect";
 
 const Welcome = () => {
   return (
-    <section className="welcome-section overflow-hidden xxsm:text-center  banw:text-left ">
-      <div className="space-y-3 p-14">
+    <section className="welcome-section overflow-hidden  xxsm:text-center  banw:text-left ">
+      <div className="space-y-3 p-20">
         <h1 className="text-3xl">
           Welcome to{" "}
           <span className="glowing-text text-cyan-500  shadow-cyan-500">
@@ -42,8 +42,8 @@ const Welcome = () => {
           </button>
         </div>
       </div>
-      <div className=" slanted-container pr-8 xxsm:hidden banw:flex  ">
-        <img className=" h-full" src="../../src/assets/images/banner.jpg" />
+      <div className=" slanted-container justify-end  pr-8 xxsm:hidden banw:flex  ">
+        <img src="../../src/assets/images/banner.jpg" />
       </div>
     </section>
   );

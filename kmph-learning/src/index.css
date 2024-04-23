@@ -13,7 +13,7 @@ body {
 
 /*Header*/
 .main-header {
-  @apply bg-white pb-2 pt-2   text-base text-purple-600 dark:bg-secondary-bg dark:text-white   md:flex tablet:flex     tablet:justify-between;
+  @apply bg-white pb-2 pt-2    text-base font-medium text-black dark:bg-secondary-bg dark:text-white   md:flex tablet:flex     tablet:justify-between;
 }
 
 .main-ul {
@@ -38,7 +38,7 @@ body {
 }
 
 .secondary-li {
-  @apply cursor-pointer border-b-2 border-transparent font-semibold  text-purple-600 hover:border-b-2 hover:border-purple-600 dark:text-purple-400;
+  @apply cursor-pointer border-b-2 border-transparent font-bold  text-purple-600 hover:border-b-2 hover:border-purple-600 dark:text-purple-400;
 }
 
 .search-box {

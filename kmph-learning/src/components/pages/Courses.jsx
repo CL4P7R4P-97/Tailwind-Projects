@@ -13,10 +13,11 @@ const Courses = () => {
           Premium Courses
         </h1>
         <div className=" justify-evenly gap-10 space-y-4 xxsm:flex-col md:flex md:flex-row md:flex-wrap md:space-x-4   ">
-          {premiumCourses.map((course) => {
+          {premiumCourses.map((course, index) => {
             return (
               <CourseCard
                 width={true}
+                key={index}
                 courseTitle={course.courseTitle}
                 courseDescription={course.courseDescription}
                 imgUrl={course.imgUrl}
@@ -34,11 +35,12 @@ const Courses = () => {
           More Courses
         </h1>
         <div className="justify-evenly gap-10 xxsm:flex-col md:flex md:flex-row md:flex-wrap md:space-x-4 tablet:flex-wrap ">
-          {courses.map((course) => {
+          {courses.map((course, index) => {
             return (
               <CourseCard
                 courseTitle={course.courseTitle}
                 width={true}
+                key={index + "x"}
                 courseDescription={course.courseDescription}
                 imgUrl={course.imgUrl}
               />

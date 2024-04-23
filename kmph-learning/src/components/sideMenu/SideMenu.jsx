@@ -13,6 +13,7 @@ import {
 import { HomeIcon } from "@heroicons/react/24/outline";
 import { DarkThemeToggle } from "flowbite-react";
 import { default as React, useState } from "react";
+import { Link } from "react-router-dom";
 import code from "../../assets/images/svgs/code.svg";
 
 const callsToAction = [
@@ -43,7 +44,7 @@ const products = [
   {
     name: "Blog",
 
-    href: "/blogs",
+    href: "/blog",
     icon: DocumentTextIcon,
   },
   {
@@ -127,8 +128,8 @@ const SideMenu = () => {
                         {[...products, ...callsToAction].map((item) => (
                           <Disclosure.Button
                             key={item.name}
-                            as="a"
-                            href={item.href}
+                            as={Link}
+                            to={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-purple-700 hover:bg-white dark:text-white dark:hover:bg-gray-50"
                           >
                             {item.name}
@@ -189,10 +190,10 @@ const SideMenu = () => {
                 >
                   Sign Up
                 </a>
-                <div class=" md:hidden  ">
+                <div className=" md:hidden  ">
                   <label
                     htmlFor="searchBox"
-                    class=" absolute z-50 ml-2 mt-3 rounded-lg border-purple-600"
+                    className=" absolute z-50 ml-2 mt-3 rounded-lg border-purple-600"
                   >
                     <FontAwesomeIcon
                       style={{ color: "#9333EA", width: "17px" }}
@@ -203,7 +204,7 @@ const SideMenu = () => {
                   <input
                     id="searchBox"
                     placeholder="Search..."
-                    class="search-box h-full w-full p-0"
+                    className="search-box h-full w-full p-0"
                   />
                 </div>
               </div>

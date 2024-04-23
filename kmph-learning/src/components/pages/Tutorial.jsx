@@ -10,7 +10,7 @@ const Tutorial = (props) => {
           className="section-heading my-4 
     pt-4 text-center text-2xl"
         >
-          Tutorial
+          Tutorials
         </h1>
         <div
           style={{ alignItems: "baseline" }}
@@ -18,7 +18,12 @@ const Tutorial = (props) => {
         >
           {tutorials.map((tut, index) => {
             return (
-              <TutorialCard name={tut.name} id={index} imgUrl={tut.imgUrl} />
+              <TutorialCard
+                name={tut.name}
+                id={index}
+                key={index}
+                imgUrl={tut.imgUrl}
+              />
             );
           })}
         </div>

@@ -9,7 +9,7 @@ const TutorialCard = ({ name, imgUrl }) => {
       <h1 className="text-lg  text-black dark:text-white">{name}</h1>
 
       <div>
-        <button className=" btn-dark w-2/3 rounded-2xl p-1">
+        <button className=" btn-dark w-2/3 rounded-2xl p-1 text-white">
           Start Learning
         </button>
       </div>

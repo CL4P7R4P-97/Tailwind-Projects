@@ -6,7 +6,6 @@ const CourseCard = ({
   imgUrl,
   width = false,
 }) => {
-  console.log(width);
   const classes = width ? "card mt-3 md:w-1/4" : "card mt-3 md:w-1/3  ";
   return (
     <div className={classes}>

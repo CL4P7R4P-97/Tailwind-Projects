@@ -18,14 +18,15 @@ const persons = [
 
 const Testimonials = () => {
   return (
-    <section class="testimonials h-full">
-      <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
-      <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray-700 shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 dark:bg-body-dark sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+    <section className="testimonials h-full">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+      <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray-700 shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 dark:bg-body-dark sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
       <div className=" pb-8 text-center text-3xl text-white">Testimonials</div>
-      <div class="items- mx-auto justify-around space-x-2  space-y-3  text-center xxsm:flex-col md:flex md:max-w-2xl md:flex-row  lg:max-w-4xl">
-        {persons.map((person) => {
+      <div className="items- mx-auto justify-around space-x-2  space-y-3  text-center xxsm:flex-col md:flex md:max-w-2xl md:flex-row  lg:max-w-4xl">
+        {persons.map((person, index) => {
           return (
             <TestimonialCard
+              key={index}
               description={person.description}
               person={person.name}
               personJob={person.personJob}

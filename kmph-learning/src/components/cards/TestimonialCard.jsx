@@ -7,7 +7,7 @@ const TestimonialCard = ({ description, person, personJob }) => {
         <img className="h-8 pb-2 " src={logo} alt="image" />
         {description}
       </p>
-      <div class="reviewer p-2">
+      <div className="reviewer p-2">
         <p className="mt-2 text-black dark:text-white">{person}</p>
         <h6 className="text-subHeading">{personJob}</h6>
       </div>

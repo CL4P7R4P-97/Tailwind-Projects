@@ -23,12 +23,13 @@ const courses = [
 ];
 const CoursesSection = () => {
   return (
-    <section class="section-courses">
+    <section className="section-courses">
       <h1 className=" section-heading">Recommended Courses</h1>
-      <div class=" justify-evenly p-10 xxsm:flex-col    xxsm:space-y-3 md:flex   md:flex-row md:space-x-8">
-        {courses.map((course) => {
+      <div className=" justify-evenly p-10 xxsm:flex-col    xxsm:space-y-3 md:flex   md:flex-row md:space-x-8">
+        {courses.map((course, index) => {
           return (
             <CourseCard
+              key={index}
               courseTitle={course.courseTitle}
               courseDescription={course.courseDescription}
               imgUrl={course.imgUrl}

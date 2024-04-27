@@ -44,10 +44,10 @@ const MainNav = () => {
         </li>
       </ul>
 
-      <div className="xxsm:hidden tablet:my-6 tablet:flex">
-        <DarkThemeToggle className="    bg-slate-500 text-white shadow-lg shadow-gray-500 hover:bg-purple-600 hover:shadow-purple-600" />
-      </div>
       <ul className="space-x-4  p-2 pb-0 pt-1  text-base xxsm:hidden tablet:m-2 tablet:flex tablet:items-center ">
+        <div className="xxsm:hidden tablet:my-6 tablet:flex">
+          <DarkThemeToggle className="    bg-slate-500 text-white shadow-lg shadow-gray-500 hover:bg-purple-600 hover:shadow-purple-600" />
+        </div>
         <button className="main-button">Login</button>
         <button className="main-button">SignUp</button>
       </ul>

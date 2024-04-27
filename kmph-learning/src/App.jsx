@@ -9,16 +9,17 @@ import Courses from "./components/pages/Courses";
 import Home from "./components/pages/Home";
 import Notes from "./components/pages/Notes";
 import Tutorial from "./components/pages/Tutorial";
+import Template from "./components/tutorials/Template";
 function App() {
   return (
     <>
       <Router>
-        <div className="flex min-h-screen flex-col">
+        <div className="-mb-6 flex flex-col  ">
           <header className="fixed z-20 w-full divide-y-2 divide-purple-500/95 drop-shadow-sm  ">
             <MainNav />
             <SecondaryNav />
           </header>
-          <main className="mt-40  grow ">
+          <main className="  main-margin h-full grow  overflow-hidden break-words  ">
             <Routes>
               <Route path="/" element={<Home />}></Route>
               <Route path="/courses" element={<Courses />}></Route>
@@ -26,6 +27,7 @@ function App() {
               <Route path="/blog" element={<Blog />}></Route>
               <Route path="/notes" element={<Notes />}></Route>
               <Route path="/contact" element={<Contact />}></Route>
+              <Route path="/tutorial/*" element={<Template />}></Route>
             </Routes>
           </main>
           <Footer />

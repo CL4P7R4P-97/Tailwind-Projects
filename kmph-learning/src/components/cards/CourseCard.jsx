@@ -6,7 +6,7 @@ const CourseCard = ({
   imgUrl,
   width = false,
 }) => {
-  const classes = width ? "card mt-3 md:w-1/4" : "card mt-3 md:w-1/3  ";
+  const classes = width ? "card mt-3 md:w-1/4" : "card mt-3 md:w-1/3   ";
   return (
     <div className={classes}>
       <div className="relative h-1/3 overflow-hidden ">
@@ -21,7 +21,7 @@ const CourseCard = ({
         <h4 className="offer">FREE COURSE</h4>
         <h1 className="course-name">{courseTitle}</h1>
         <p className="course-desc">{courseDescription}</p>
-        <div className="pt-8">
+        <div className="pt-2">
           <button className=" crdBtn btn btn-dark">Start Watching</button>
         </div>
       </div>

@@ -66,7 +66,7 @@ const secondaryTabs = [
   },
   {
     title: "JAVASCRIPT",
-    href: "tutorial/javascript",
+    href: "tutorial/js",
   },
   {
     title: "C",
@@ -90,7 +90,7 @@ const secondaryTabs = [
   },
   {
     title: "REACT JS",
-    href: "tutorial/reactjs",
+    href: "tutorial/react",
   },
 ];
 const SideMenu = () => {
@@ -101,7 +101,7 @@ const SideMenu = () => {
   };
   return (
     <div
-      className="absolute right-0 top-6 mr-2 cursor-pointer rounded-lg hover:shadow-md hover:shadow-purple-400 tablet:hidden "
+      className="absolute right-0 top-6 mr-2 cursor-pointer rounded-lg  tablet:hidden "
       onClick={handleMenu}
     >
       <svg
@@ -110,7 +110,7 @@ const SideMenu = () => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className=" h-8 w-8 text-purple-500"
+        className=" h-8 w-8 text-gray-400 hover:text-purple-800 "
       >
         <path
           strokeLinecap="round"
@@ -125,10 +125,9 @@ const SideMenu = () => {
         onClose={() => handleMenu}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-40 w-2/4 overflow-y-auto bg-gray-200  px-6 py-6 dark:bg-secondary-bg sm:ring-1  sm:ring-gray-900/10 ">
-          <div className="flex items-center justify-between">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-40 w-2/4 overflow-y-auto bg-gray-200   px-6 py-6 dark:bg-secondary-bg sm:ring-1  sm:ring-gray-900/10 ">
+          <div className=" flex items-center justify-between pb-4 ">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">KMPHLearning</span>
               <img className="h-8 w-auto" src={code} alt="" />
             </a>
             <div>
@@ -145,7 +144,7 @@ const SideMenu = () => {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
+              <div className="space-y-2 py-6 sm:hidden">
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
@@ -209,12 +208,6 @@ const SideMenu = () => {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50 dark:text-white"
-                >
-                  Features
-                </a>
               </div>
               <div className="py-6">
                 <a

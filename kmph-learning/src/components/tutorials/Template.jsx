@@ -16,15 +16,13 @@ const Template = () => {
   const currentTab = useSelector(getCurrentTab);
   const parent = useSelector(getCurrentParent);
   const [content, setContent] = useState("");
-  console.log(parent, currentTab);
+
   const dispatch = useDispatch();
 
   const currentTutorial = useLocation()
     .pathname.split("tutorial/")[1]
     .toUpperCase();
   const currentData = data[currentTutorial];
-
-  console.log(currentTutorial);
 
   useEffect(() => {
     loadContent();

@@ -127,7 +127,10 @@ const SideMenu = () => {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-40 w-2/4 overflow-y-auto bg-gray-200   px-6 py-6 dark:bg-secondary-bg sm:ring-1  sm:ring-gray-900/10 ">
           <div className=" flex items-center justify-between pb-4 ">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a
+              href="#"
+              className="-m-1.5 rounded-lg p-1.5  hover:shadow-md hover:ring-2 hover:ring-gray-300"
+            >
               <img className="h-8 w-auto" src={code} alt="" />
             </a>
             <div>
@@ -212,13 +215,13 @@ const SideMenu = () => {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 my-1 block rounded-lg bg-gray-500  px-3 py-2.5 text-base font-semibold leading-7 text-white  hover:bg-purple-500/85 hover:text-white dark:hover:bg-gray-700"
+                  className="-mx-3 my-1 block rounded-lg bg-gray-500  px-3 py-2.5 text-base font-semibold leading-7 text-white  hover:bg-purple-700/85 hover:text-white dark:hover:bg-gray-700"
                 >
                   Log in
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 my-1 block rounded-lg bg-gray-500  px-3 py-2.5 text-base font-semibold leading-7 text-white  hover:bg-purple-500/85 hover:text-white dark:hover:bg-gray-700"
+                  className="-mx-3 my-1 block rounded-lg bg-gray-500  px-3 py-2.5 text-base font-semibold leading-7 text-white  hover:bg-purple-700/85 hover:text-white dark:hover:bg-gray-700"
                 >
                   Sign Up
                 </a>

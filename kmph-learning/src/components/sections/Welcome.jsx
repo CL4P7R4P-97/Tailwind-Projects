@@ -37,7 +37,10 @@ const Welcome = () => {
         </p>
         <div className=" space-x-3 space-y-2">
           <button className="btn btn-light">Free Courses</button>{" "}
-          <button style={{ marginLeft: 0 }} className="btn btn-light">
+          <button
+            style={{ marginLeft: 0 }}
+            className="btn bg-slate-600 hover:bg-slate-800 "
+          >
             Explore Blogs
           </button>
         </div>

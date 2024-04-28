@@ -13,6 +13,7 @@ export default {
       mid: "525px",
       "side-nav": "100px",
       footer: "552px",
+      card: "810px",
       banw: "935px",
       ...defaultTheme.screens,
     },

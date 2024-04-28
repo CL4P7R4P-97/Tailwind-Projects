@@ -4,7 +4,7 @@ import CourseCard from "../cards/CourseCard";
 
 const Courses = () => {
   return (
-    <div className="   mb-5 flex-col p-4 text-black">
+    <div className="mb-5 flex   flex-col p-4 text-black xxsm:items-center">
       <div>
         <h1
           className="section-heading my-4 

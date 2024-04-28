@@ -28,22 +28,22 @@ const Footer = () => {
 
       <div className=" flex  justify-center  p-2">
         <ul className="flex p-2">
-          <li className="footer-icon cursor-pointer rounded-full  p-1 ">
+          <li className="footer-icon cursor-pointer rounded-full p-1 hover:shadow-yellow-800  hover:ring-yellow-300 ">
             <a>
               <img className="w-8" src={facebook} alt="facebookIcon" />
             </a>
           </li>
-          <li className="footer-icon cursor-pointer  rounded-full   ">
+          <li className="footer-icon cursor-pointer rounded-full ring-cyan-300  hover:shadow-cyan-800   ">
             <a>
               <img className="w-10 p-2" src={twitter} alt="twitterIcon" />
             </a>
           </li>
-          <li className="footer-icon cursor-pointer rounded-full  shadow-purple-400  ">
+          <li className="footer-icon cursor-pointer rounded-full ring-pink-300   hover:shadow-pink-800  ">
             <a>
               <img className="w-10 p-2" src={insta} alt="instaIcon" />
             </a>
           </li>
-          <li className="footer-icon cursor-pointer rounded-full  shadow-purple-400 ">
+          <li className="footer-icon cursor-pointer rounded-full  ring-purple-300 ">
             <a>
               <img className="w-10 p-2" src={github} alt="gitHub" />
             </a>

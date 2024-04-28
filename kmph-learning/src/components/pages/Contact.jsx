@@ -10,9 +10,9 @@ const Contact = () => {
       <h1 className="text-center text-3xl font-bold text-white">
         Feel Free to contact me!
       </h1>
-      <div className="flex justify-center">
+      <div className="flex justify-center  ">
         <img
-          className="rounded-full"
+          className="animation-logo rounded-full "
           width="100px"
           src="https://img.freepik.com/free-photo/view-3d-man-holding-laptop_23-2150709818.jpg?t=st=1713842611~exp=1713846211~hmac=85afc6ad7a11d2958023cd6453a4380a17d42b3443961b3a5df7db7a99bb4ed2&w=740"
         />

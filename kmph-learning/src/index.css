@@ -161,3 +161,21 @@ body {
 .main-margin {
   margin-top: 152px;
 }
+
+@keyframes glowLogo {
+  0% {
+    @apply shadow-sm shadow-purple-800 ring;
+  }
+
+  50% {
+    @apply shadow-md shadow-purple-800 ring-2;
+  }
+
+  100% {
+    @apply shadow-lg shadow-purple-800 ring-4 ring-purple-500;
+  }
+}
+
+.animation-logo {
+  -webkit-animation: glowLogo 4.5s ease-out infinite;
+}

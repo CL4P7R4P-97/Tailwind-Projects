@@ -16,8 +16,8 @@ const CourseCard = ({ courseTitle, courseDescription, imgUrl }) => {
         <h1 className="course-name">{courseTitle}</h1>
         <p className="course-desc ">{courseDescription}</p>
       </div>
-      <div class="px-6 pb-2 pt-4">
-        <span class="my-2 mr-2 inline-block cursor-pointer rounded-full bg-purple-700 px-3 py-2 text-sm font-semibold text-white hover:bg-purple-600">
+      <div className="px-6 pb-2 pt-4">
+        <span className="my-2 mr-2 inline-block cursor-pointer rounded-full bg-purple-700 px-3 py-2 text-sm font-semibold text-white hover:bg-purple-600">
           {" "}
           Start Watching{" "}
         </span>

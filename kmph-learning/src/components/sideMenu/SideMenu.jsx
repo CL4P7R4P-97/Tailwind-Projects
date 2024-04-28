@@ -196,7 +196,6 @@ const SideMenu = () => {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {console.log(...secondaryTabs)}
                         {[...secondaryTabs, ...callsToAction].map((item) => (
                           <Disclosure.Button
                             key={item.title}

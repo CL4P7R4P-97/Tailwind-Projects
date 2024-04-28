@@ -8,7 +8,7 @@ import twitter from "../../assets/images/svgs/twitter.svg";
 import { getPanelState } from "../../redux/slice/tutorialsSlice";
 const Footer = () => {
   const isPanelOpen = useSelector(getPanelState);
-  console.log(isPanelOpen);
+
   return (
     <footer
       className={` ${isPanelOpen ? "justify-center" : "justify-evenly"} bg-purple-100   p-2 text-white dark:bg-secondary-bg xxsm:flex-col md:flex md:flex-row `}

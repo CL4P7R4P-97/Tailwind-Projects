@@ -34,7 +34,7 @@ const Contact = () => {
               <img className="w-10 p-2" src={insta} alt="instaIcon" />
             </a>
           </li>
-          <li className="footer-icon cursor-pointer rounded-full  ring-purple-300 ">
+          <li className="footer-icon cursor-pointer rounded-full  ring-purple-300 hover:shadow-purple-800">
             <a>
               <img className="w-10 p-2" src={github} alt="gitHub" />
             </a>

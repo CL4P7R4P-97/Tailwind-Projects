@@ -13,7 +13,7 @@ const Footer = () => {
     <footer
       className={` ${isPanelOpen ? "justify-center" : "justify-evenly"} bg-purple-100   p-2 text-white dark:bg-secondary-bg xxsm:flex-col md:flex md:flex-row `}
     >
-      <div className="footer:flex xxsm:flex-cols items-center  space-x-2 pb-1 pt-3 text-center text-black dark:text-white">
+      <div className="xxsm:flex-cols items-center space-x-2  pb-1 pt-3 text-center text-black dark:text-white footer:flex">
         <div className="mx-auto my-0  max-w-max ">
           <img className="m-1 w-8  " src={code} alt="code" />
         </div>
@@ -43,7 +43,7 @@ const Footer = () => {
               <img className="w-10 p-2" src={insta} alt="instaIcon" />
             </a>
           </li>
-          <li className="footer-icon cursor-pointer rounded-full  ring-purple-300 ">
+          <li className="footer-icon cursor-pointer rounded-full  ring-purple-300 hover:shadow-purple-800">
             <a>
               <img className="w-10 p-2" src={github} alt="gitHub" />
             </a>

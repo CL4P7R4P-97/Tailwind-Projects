@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 
@@ -18,11 +18,15 @@ const Template = () => {
   const [content, setContent] = useState("");
 
   const dispatch = useDispatch();
+  const location = useLocation();
 
-  const currentTutorial = useLocation()
-    .pathname.split("tutorial/")[1]
-    .toUpperCase();
-  const currentData = data[currentTutorial];
+  const currentTutorial = useMemo(() => {
+    return location.pathname.split("tutorial/")[1].toUpperCase();
+  }, [location.pathname]);
+
+  const currentData = useMemo(() => {
+    return data[currentTutorial];
+  }, [currentTutorial, data]);
 
   useEffect(() => {
     loadContent();
@@ -34,17 +38,15 @@ const Template = () => {
     dispatch(togglePanel);
   }, []);
   useEffect(() => {
-    dispatch(changeTab(data[currentTutorial]["INTRODUCTION"][0].title));
+    dispatch(changeTab(currentData["INTRODUCTION"][0].title));
   }, [currentTutorial]);
 
-  const loadContent = () => {
-    let pageContent = data[currentTutorial][parent]?.map((tab, index) => {
-      if (tab.title === currentTab) {
-        return tab.content;
-      }
-    });
+  const loadContent = useCallback(() => {
+    const pageContent =
+      currentData?.[parent]?.find((tab) => tab.title === currentTab)?.content ||
+      "";
     setContent(pageContent);
-  };
+  }, [currentTab, parent, currentData, data]);
 
   return (
     <section className="    m-[-12px] my-auto flex pr-12     ">

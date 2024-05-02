@@ -48,8 +48,12 @@ const MainNav = () => {
         <div className="xxsm:hidden tablet:my-6 tablet:flex">
           <DarkThemeToggle className="    bg-slate-500 text-white shadow-lg shadow-gray-500 hover:bg-purple-600 hover:shadow-purple-600" />
         </div>
-        <button className="main-button">Login</button>
-        <button className="main-button">SignUp</button>
+        <button className="main-button">
+          <Link to="/login">Login</Link>
+        </button>
+        <button className="main-button">
+          <Link to="/signup">SignUp</Link>
+        </button>
       </ul>
       <SideMenu />
     </nav>

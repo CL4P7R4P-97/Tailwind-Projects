@@ -1,5 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
+import Login from "./components/auth/Login";
+import Signup from "./components/auth/Signup";
 import Footer from "./components/footer/Footer";
 import MainNav from "./components/header/MainNav";
 import SecondaryNav from "./components/header/SecondaryNav";
@@ -28,6 +30,8 @@ function App() {
               <Route path="/notes" element={<Notes />}></Route>
               <Route path="/contact" element={<Contact />}></Route>
               <Route path="/tutorial/*" element={<Template />}></Route>
+              <Route path="/login" element={<Login />}></Route>
+              <Route path="/signup" element={<Signup />}></Route>
             </Routes>
           </main>
           <Footer />

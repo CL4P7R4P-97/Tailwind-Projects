@@ -26,6 +26,8 @@ const Welcome = () => {
               ],
               autoStart: true,
               loop: true,
+              deleteSpeed: 50,
+              pauseFor: 300,
             }}
           />
         </h2>

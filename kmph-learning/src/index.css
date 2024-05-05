@@ -55,7 +55,7 @@ body {
 }
 
 .btn {
-  @apply h-10 rounded-lg  px-5 text-justify text-white   hover:shadow-lg   hover:shadow-slate-400/50 focus:outline-none focus:ring;
+  @apply h-10 rounded-lg  px-5  text-white   hover:shadow-lg   hover:shadow-slate-400/50 focus:outline-none focus:ring;
 }
 
 .btn-dark {

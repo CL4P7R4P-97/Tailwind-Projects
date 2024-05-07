@@ -213,13 +213,13 @@ const SideMenu = () => {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="/login"
                   className="-mx-3 my-1 block rounded-lg bg-gray-500  px-3 py-2.5 text-base font-semibold leading-7 text-white  hover:bg-purple-700/85 hover:text-white dark:hover:bg-gray-700"
                 >
                   Log in
                 </a>
                 <a
-                  href="#"
+                  href="/signup"
                   className="-mx-3 my-1 block rounded-lg bg-gray-500  px-3 py-2.5 text-base font-semibold leading-7 text-white  hover:bg-purple-700/85 hover:text-white dark:hover:bg-gray-700"
                 >
                   Sign Up

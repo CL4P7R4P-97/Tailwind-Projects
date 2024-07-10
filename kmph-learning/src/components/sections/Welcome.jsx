@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import bannerImg from "../../src/assets/images/banner.jpg";
+import bannerImg from "../../assets/images/banner.jpg";
 
 const Welcome = () => {
   return (

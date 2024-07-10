@@ -1,5 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import bannerImg from "../../src/assets/images/banner.jpg";
 
 const Welcome = () => {
   return (
@@ -48,7 +49,7 @@ const Welcome = () => {
         </div>
       </div>
       <div className=" slanted-container justify-end  pr-8 xxsm:hidden banw:flex  ">
-        <img src="../../src/assets/images/banner.jpg" />
+        <img src={bannerImg} />
       </div>
     </section>
   );
